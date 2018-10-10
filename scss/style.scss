@@ -1,0 +1,140 @@
+$light-gray: #E3E5E5;
+$light-blue: #DBF9FC;
+$gray: #5D5D5D;
+$blue: #79CAD9;
+$futuraPT: 'FuturaPT-LightObl';
+
+@font-face {
+  font-family: 'FuturaPT-LightObl';
+  src: url('../fonts/FuturaPT-LightObl/FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FuturaPT-LightObl/FuturaPT-LightObl.otf')  format('opentype'),
+  url('../fonts/FuturaPT-LightObl/FuturaPT-LightObl.woff') format('woff'),
+  url('../fonts/FuturaPT-LightObl/FuturaPT-LightObl.ttf')  format('truetype'),
+  url('../fonts/FuturaPT-LightObl/FuturaPT-LightObl.svg#FuturaPT-LightObl') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../fonts/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
+  url('../fonts/CenturyGothic/CenturyGothic.ttf')  format('truetype'),
+  url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "parts/header";
+@import "parts/footer";
+@import "parts/front-page";
+@import "parts/product";
+@import "parts/shop-page";
+@import "parts/woocommerce-messages";
+@import "parts/portfolio-work";
+@import "parts/design";
+
+#main {
+  padding-top: 3%;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+body {
+  color: $gray;
+  font: 400 1rem/1.5rem 'CenturyGothic';
+}
+
+.reset-list {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  & li {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+%blue-btn {
+  text-transform: uppercase;
+  text-align: center;
+  background: $blue;
+  color: #FFF;
+  border: 1px solid $blue*1.1;
+  border-bottom: none;
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    background: $blue/1.1;
+    color: $light-blue;
+  }
+}
+
+%page-header {
+  text-align: center;
+  background: $light-blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2.5;
+  margin: 10px 0;
+}
+
+%light-blue-btn {
+  text-transform: lowercase;
+  text-align: center;
+  background: $light-blue;
+  color: $gray;
+  border: none;
+  transition: 0.3s ease-in-out all;
+}
+
+%selectItem {
+  font: 400 .95rem/2rem 'CenturyGothic';
+  letter-spacing: 3px;
+  width: 100%;
+  padding-bottom: 1px;
+  padding-left: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background: $gray;
+    color: #fff;
+  }
+}
+
+%box-shadow {
+  box-shadow: 0 5px 25px 4px rgba(0, 0, 0, 0.15);
+}
+
+.normal-font {
+  font: 400 1rem/1.5rem 'CenturyGothic';
+}
+
+#content {
+  padding-top: 15px;
+}
+
+label {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hover-scale {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  &:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari */
+    transform: scale(1.1); /* Standard syntax */
+  }
+}

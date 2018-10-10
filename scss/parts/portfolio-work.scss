@@ -1,0 +1,24 @@
+.portfolio-work-title {
+  @extend %page-header;
+}
+
+.portfolio-work-post {
+  .entry-content {
+    p {
+      line-height: 2;
+    }
+  }
+
+  /*** Portfolio Gallery ***/
+  .gallery { /* Masonry container */
+    column-count: 2;
+    column-gap: 1em;
+  }
+
+  .gallery-item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+}

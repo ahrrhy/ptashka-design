@@ -1,0 +1,91 @@
+$light-gray: #E3E5E5;
+$light-blue: #DBF9FC;
+$gray: #5D5D5D;
+$blue: #79CAD9;
+
+#masthead {
+  background: #ffffff;
+  position: fixed;
+  z-index: 444;
+}
+
+#menu-menu {
+  margin-left: 0;
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.navbar button.navbar-toggler {
+  outline: none;
+  width: 100%;
+  margin: 15px;
+}
+
+.nav-item {
+  min-height: inherit;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all ease-in-out 300ms;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    text-transform: lowercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari */
+      transform: scale(1.1); /* Standard syntax */
+    }
+  }
+
+  .wcmenucart-contents {
+    position: relative;
+
+    i {
+      font-size: 1.4rem;
+    }
+
+    .cart-count {
+      z-index: 15;
+      position: absolute;
+      color: red;
+      top: -10px;
+      right: -10px;
+      font-size: .8rem;
+    }
+  }
+
+}
+
+.nav-item.active {
+  color: $blue;
+}
+
+.item-home {
+  a {
+    display: block;
+    text-align: center;
+    &:hover{
+      -ms-transform: scale(1.0); /* IE 9 */
+      -webkit-transform: scale(1.0); /* Safari */
+      transform: scale(1.0); /* Standard syntax */
+    }
+  }
+}
+
+@media screen and (min-width: 767px)  {
+  ul.navbar-nav {
+    width: 100%;
+  }
+  .item-home {
+    overflow: hidden;
+  }
+}

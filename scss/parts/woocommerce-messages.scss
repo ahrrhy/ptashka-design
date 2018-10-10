@@ -1,0 +1,39 @@
+.woocommerce-message {
+  background: $light-blue;
+  border-top-color: $blue;
+  width: 100%;
+
+  &:before {
+    color: $blue;
+  }
+
+  a.restore-item {
+    text-decoration: none;
+    float: right;
+  }
+}
+
+.woocommerce a.button {
+  background: none;
+  border-radius: 0;
+  padding: 0 5px;
+  margin: 0 0 0 10px;
+  line-height: 1.5;
+
+  &:hover {
+    background: $blue;
+  }
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background: $blue/1.1;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  background: $blue;
+}

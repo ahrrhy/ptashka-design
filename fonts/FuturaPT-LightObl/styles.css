@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FuturaPT-LightObl';
+  src: url('FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),  url('FuturaPT-LightObl.otf')  format('opentype'),
+	     url('FuturaPT-LightObl.woff') format('woff'), url('FuturaPT-LightObl.ttf')  format('truetype'), url('FuturaPT-LightObl.svg#FuturaPT-LightObl') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
